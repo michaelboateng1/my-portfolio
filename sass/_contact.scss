@@ -1,0 +1,139 @@
+.contact-content-container {
+  display: flex;
+  padding-top: 3.5rem;
+
+  .left-contact {
+    flex: 2;
+
+    h4 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 1rem 0;
+      line-height: 2rem;
+    }
+
+    .contact-info {
+      .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+          margin: 0.3rem 0 !important;
+          padding: 0 !important;
+        }
+
+        .icon {
+          display: grid;
+          grid-template-columns: 40px 1fr;
+
+          i {
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+
+    .social-icon {
+      display: flex;
+      margin-top: 2rem;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: var(--color-gray5);
+        color: var(--color-white);
+        width: 50px;
+        height: 50px;
+        margin: 0 0.4rem;
+        border-radius: 50%;
+        transition: var(--transition);
+
+        &:hover {
+          background-color: var(--secondary-color);
+
+          i {
+            color: var(--primary-color);
+          }
+        }
+
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  .right-contact {
+    flex: 3;
+    margin-left: 3rem;
+
+    .input-control {
+      margin: 1.5rem 0;
+
+      input,
+      textarea {
+        border-radius: 30px;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        padding: 0.8rem 1.1rem;
+        outline: none;
+        border: none;
+        width: 100%;
+        background-color: var(--color-gray5);
+        color: var(--color-white);
+        resize: none;
+      }
+    }
+
+    .input-control-2 {
+      display: flex;
+
+      :last-child {
+        margin-left: 1.5rem;
+      }
+    }
+
+    .submit-btn {
+      display: flex;
+      justify-content: flex-start;
+
+      .btn-container {
+        button {
+          padding: 0.8rem 1.1rem;
+          background-color: transparent;
+          border: 1px solid var(--secondary-color);
+          border-radius: 30px;
+          color: var(--color-white);
+          cursor: pointer;
+          transition: var(--transition);
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          font-style: inherit;
+
+          &:hover {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+          }
+
+          &:active {
+            filter: brightness(50%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+@media screen and (max-width: 800px) {
+  header {
+    padding: 0;
+    min-height: 100vh;
+
+    .right-header {
+      padding: 2rem !important;
+    }
+  }
+
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+
+    .left-header {
+      padding-bottom: 6rem;
+      .h-shape {
+        display: none;
+      }
+
+      .image {
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+  }
+
+  .right-header {
+    grid-row: 1/2;
+    margin: 0 auto;
+    width: 90%;
+
+    .name {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-flow: row;
+    justify-content: space-evenly;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-gray5);
+
+    .control {
+      margin: 1rem 0.3rem;
+    }
+  }
+
+  .section {
+    padding: 2rem 2.5rem !important;
+  }
+
+  .main-title {
+    h2 {
+      font-size: 2rem;
+
+      span {
+        font-size: 2.5rem;
+      }
+
+      .bg-text {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+
+    .right-about {
+      padding-top: 2.5rem;
+      grid-template-columns: 1fr;
+    }
+
+    .left-about {
+      padding-right: 0;
+
+      p {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+    padding: 0 1.8rem;
+    padding-bottom: 6rem;
+  }
+
+  .about-stats {
+    .progress-bars {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .portfolios {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+
+  .blogs {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+}
+
+@media screen and (max-width: 1432px) {
+  .contact-content-container {
+    flex-flow: column;
+
+    .right-contact {
+      margin-left: 0;
+      margin-top: 2.5rem;
+      padding-bottom: 6.5rem;
+
+      .input-control-2 {
+        flex-flow: column;
+
+        :last-child {
+          margin: 1.5rem 0 0 0;
+        }
+      }
+    }
+  }
+}
