@@ -12,6 +12,7 @@
 
   .portfolio-item {
     position: relative;
+    filter: drop-shadow(2px 2px 10px var(--color-gray6));
 
     .image {
       width: 100%;
