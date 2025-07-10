@@ -42,7 +42,7 @@
     transform: translateX(-50%);
   }
 
-  .language-id{
+  .language-id {
     color: var(--secondary-color);
   }
 }
@@ -50,6 +50,7 @@
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 2em;
   padding-top: 3.5rem;
   padding-bottom: 5rem;
 
@@ -107,7 +108,7 @@
   }
 
   .left-about {
-    padding-right: 5rem;
+    margin-right: 5rem;
 
     p {
       line-height: 2rem;
@@ -125,73 +126,19 @@
 .about-stats {
   padding-bottom: 4rem;
 
-  .progress-bars {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  .skills {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    row-gap: 3em;
+    justify-content: space-around;
+    align-items: center;
 
-    .progress-bar {
-      display: flex;
-      flex-flow: column;
-
-      .prog-title {
-        text-transform: uppercase;
-        font-weight: 500;
-        margin: 1em 0;
-      }
-
-      .progress-container {
-        display: flex;
-        align-items: center;
-
-        .prog-text {
-          color: var(--color-gray2);
-        }
-
-        .progress {
-          width: 100%;
-          height: 0.45rem;
-          background-color: var(--color-gray4);
-          margin-left: 1rem;
-          position: relative;
-          border-radius: 2px;
-
-          span {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background-color: var(--secondary-color);
-            transition: var(--transition);
-            width: 60%;
-            border-radius: 2px;
-          }
-
-          .html {
-            width: 90%;
-          }
-
-          .java-script {
-            width: 75%;
-          }
-
-          .css {
-            width: 85%;
-          }
-
-          .python {
-            width: 50%;
-          }
-
-          .nodejs {
-            width: 20%;
-          }
-
-          .react {
-            width: 10%;
-          }
-        }
-      }
+    .skill {
+      font-size: 1.8rem;
     }
   }
 }
@@ -199,12 +146,11 @@
 .timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding-bottom: 3rem;
+  padding: 2em;
 
   .timeline-item {
     position: relative;
-    padding-left: 3rem;
+    margin-left: 3rem;
     border-left: 1px solid var(--color-gray5);
 
     .timeline-icon {
@@ -226,16 +172,17 @@
 
     .timeline-duration {
       padding: 0.3rem 0.6rem;
+      margin-left: 1em;
       background-color: var(--color-gray5);
-      display: inline-block;
       border-radius: 15px;
       font-size: 0.8rem;
       text-transform: uppercase;
       font-weight: 500;
+      display: inline;
     }
 
     h5 {
-      padding: 1rem 0;
+      padding: 1rem;
       text-transform: uppercase;
       font-size: 1.3rem;
       font-weight: 600;
@@ -248,9 +195,11 @@
     }
 
     p {
+      padding: 0 1em;
       color: var(--color-gray2);
       line-height: 1.6;
       letter-spacing: 0.9px;
+      padding-bottom: 3rem;
     }
   }
 }
